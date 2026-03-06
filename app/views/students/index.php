@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Siswa</title>
-    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/public/css/output.css">
 </head>
 <body>
     <h1 class="text-red-500">Daftar Siswa</h1>
