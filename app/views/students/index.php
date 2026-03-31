@@ -17,27 +17,35 @@
     <main class="bg-gray-100 grow flex-grow">
         <div class="bg-white shadow rounded-lg container mx-auto p-4 mt-4">
             <h1 class="text-2xl font-bold mb-4">Daftar Siswa</h1>
-            <p class="text-blue-500">Menampilkan daftar siswa.</p>
+            <p>Menampilkan daftar siswa yang terdaftar.</p>
         </div>
-
-        <div class="container mx-auto p-4 mt-4">
-            <table class="min-w-full bg-white shadow rounded-lg">
-                <thead>
+<!-- Card Content -->
+        <div class="container mx-auto p-4 mt-4 bg-white shadow rounded-lg">
+            <table class="w-full ">
+                <thead class="bg-gray-300">
                     <tr>
-                        <th class="py-2 px-4 border-b">ID</th>
-                        <th class="py-2 px-4 border-b">Nama</th>
-                        <th class="py-2 px-4 border-b">Kelas</th>
-                        <th class="py-2 px-4 border-b">Aksi</th>
+                        <th class="py-2 px-4 text-left">No</th>
+                        <th class="py-2 px-4 text-left">Nama</th>
+                        <th class="py-2 px-4 text-left">NIS</th>
+                        <th class="py-2 px-4 text-left">Kelas</th>
+                        <th class="py-2 px-4 text-left">No Telepon</th>
+                        <th class="py-2 px-4">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Contoh data siswa -->
                     <tr>
-                        <td class="py-2 px-4 border-b">1</td>
-                        <td class="py-2 px-4 border-b">Budi Santoso</td>
-                        <td class="py-2 px-4 border-b">XII RPL 1</td>
-                        <td class="py-2 px-4 border-b">
-                            <a href="/students/1" class="text-blue-500 hover:underline">Lihat Detail</a>
+                        <td class="py-2 px-4 text-left">1</td>
+                        <td class="py-2 px-4 text-left">Harry Wang</td>
+                        <td class="py-2 px-4 text-left">999</td>
+                        <td class="py-2 px-4 text-left">XI TKJ 3</td>
+                        <td class="py-2 px-4 text-left">081352689235</td>
+                        <td class="py-2 px-4 text-center">
+                            <div class="flex items-center justify-center gap-4">
+                                <a href="" class="text-green-500 hover:underline">Detail</a>
+                                <a href="" class="text-yellow-500 hover:underline">Edit</a>
+                                <a href="" class="text-red-500 hover:underline">Hapus</a>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
