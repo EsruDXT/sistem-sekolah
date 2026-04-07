@@ -42,8 +42,8 @@
                         <td class="py-2 px-4 text-left">081352689235</td>
                         <td class="py-2 px-4 text-center">
                             <div class="flex items-center justify-center gap-4">
-                                <a href="" class="text-green-500 hover:underline">Detail</a>
-                                <a href="" class="text-yellow-500 hover:underline">Edit</a>
+                                <a href="/students/1" class="text-green-500 hover:underline">Detail</a>
+                                <a href="/students/1/edit" class="text-yellow-500 hover:underline">Edit</a>
                                 <a href="" class="text-red-500 hover:underline">Hapus</a>
                             </div>
                         </td>

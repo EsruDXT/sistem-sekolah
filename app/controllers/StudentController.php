@@ -14,5 +14,9 @@ class StudentController
     {
         require_once '../app/views/students/show.php';
     }
+    public function edit($id)
+    {
+        require_once '../app/views/students/edit.php';
+    }
 
 }  
