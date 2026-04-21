@@ -18,11 +18,29 @@ class StudentController extends Controller
         $this->view('students.create');
     }
     public function show($id)
-    {
-        $this->view('students.show');
+    {   
+        $id = intval($id);
+        $studentModel = new Student();
+        $student = $studentModel->getStudentById($id);
+        $this->view('students.show', ['student' => $student]);
+        
     }
     public function edit($id)
     {
-        $this->view('students.edit');
+        $studentModel = new Student();
+        $student = $studentModel->getStudentById($id);
+        $this->view('students.edit', ['student' => $student]);
     }
+    public function store()
+    {
+        $studentModel = new Student();
+        $result = $studentModel->insert($_POST);
+        if ($result) {
+            header("Location: /students");
+            exit();
+        } else {
+            echo "Gagal menambahkan siswa.";
+        }
 }
+}
+?>
